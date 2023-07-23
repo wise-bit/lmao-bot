@@ -28,7 +28,7 @@ client.on("messageCreate", (msg) => {
   if (["lmao", "lol", "lmfao"].some((item) => msg.includes(item))) {
     msg
       .react(`😂`)
-      .then(() => console.log("Reaction added!"))
+      // .then(() => console.log("Reaction added!"))
       .catch(console.error);
   }
 });
