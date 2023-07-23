@@ -25,7 +25,7 @@ client.on("ready", () => {
 });
 
 client.on("messageCreate", (msg) => {
-  if (msg.content.toLowerCase().includes("lmao")) {
+  if (["lmao", "lol", "lmfao"].some((item) => msg.includes(item))) {
     msg
       .react(`😂`)
       .then(() => console.log("Reaction added!"))
