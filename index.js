@@ -47,7 +47,7 @@ client.on("messageCreate", (msg) => {
   let reaction = "";
 
   if (findMostLooolOccurrences(content)) {
-    const lolCount = findMostLooolOccurrences(content);
+    const lolCount = findMostLooolOccurrences(content).match(/o/g).length;
 
     if (lolCount == 1) {
       reaction = `🙂`;
