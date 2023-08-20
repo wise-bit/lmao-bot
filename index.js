@@ -70,4 +70,13 @@ client.on("messageCreate", (msg) => {
   }
 });
 
+client.on("interactionCreate", (interaction) => {
+  if (!interaction.isChatInputCommand()) return;
+  // console.log(interaction);
+
+  if (interaction.commandName === "lmao") {
+    interaction.reply("lmao");
+  }
+});
+
 client.login(process.env.CLIENT_TOKEN);
