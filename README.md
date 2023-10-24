@@ -4,7 +4,7 @@
 ~ Reaction bot that reacts with emojis based on emphasis of exitement, also known as the "lmao factor".\
 ~ Added to 125+ servers.\
 ~ Loved by thousands of Discord users.\
-~ Supported commands: `/lmao`.\
+~ Supported commands: `/lmao`.
 
 ## Screenshots
 
