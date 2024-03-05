@@ -43,6 +43,10 @@ client.on("ready", () => {
 });
 
 client.on("messageCreate", (msg) => {
+  if (!msg.content.startsWith("<:c_s")) {
+    console.log("> " + msg.author.username + " (" + msg.guild.name + ")" + ": " + msg.content);
+  }
+
   const content = msg.content.toLowerCase();
   let reaction = "";
 
